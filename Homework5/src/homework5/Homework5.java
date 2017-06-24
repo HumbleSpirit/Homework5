@@ -21,7 +21,8 @@ public class Homework5 {
         
         // TODO code application logic here
         int firstValue = 0;
-        
+        int sum = 0;
+        long mult = 1;
         Scanner in = new Scanner(System.in);
         System.out.println("Task 1");
         System.out.println("Draw a line with desired number of stars");
@@ -53,12 +54,31 @@ public class Homework5 {
         System.out.println("Count a summ of numbers for range");
         System.out.println("Please enter last number in range");
         firstValue = in.nextInt();  
-        int sum = 0;
+        
         for (int i = 0; i <= firstValue; i++)
         {
             sum+=i; 
         }
         System.out.println(sum);
+        
+        System.out.println("Task 4");
+        System.out.println("Count a summ of even numbers and multiplication of odd numbers for range");
+        System.out.println("Please enter last number in range");
+        firstValue = in.nextInt();  
+        sum = 0;
+        for (int i = 0; i <= firstValue; i++)
+        {
+            if (i % 2 == 0)
+            {
+                sum+=i;
+            }
+            else
+            {
+                mult*=i;
+            }
+        }
+        System.out.println("Summ of all even numbers is " + sum);
+        System.out.println("Multiplication of all odd numbers is " + mult);
     }
     
 }
