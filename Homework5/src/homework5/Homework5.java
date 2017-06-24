@@ -79,6 +79,18 @@ public class Homework5 {
         }
         System.out.println("Summ of all even numbers is " + sum);
         System.out.println("Multiplication of all odd numbers is " + mult);
+        
+        System.out.println("Task 5");
+        System.out.println("Count a factorial for range");
+        System.out.println("Please enter last number in range");
+        firstValue = in.nextInt();  
+        mult = 1;
+        for (int i = 1; i <= firstValue; i++)
+        {
+                mult*=i;
+        }
+        
+        System.out.println("Factorial of " + firstValue + " is " + mult);
     }
     
 }
