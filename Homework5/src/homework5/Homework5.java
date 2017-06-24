@@ -40,12 +40,25 @@ public class Homework5 {
         System.out.println("Task 2");
         System.out.println("Display only even numbers from range");
         
-        for (int i = 0; i <= 20; i++) {
+        for (int i = 0; i <= 20; i++) 
+        {
             if (i % 2 == 0 && i != 0 )
             {
-            System.out.println(i);
+                System.out.println(i);
             }
 
+        }
+        
+        System.out.println("Task 3");
+        System.out.println("Count a summ of numbers for range");
+        System.out.println("Please enter last number in range");
+        firstValue = in.nextInt();  
+        int sum = 0;
+        for (int i = 0; i <= firstValue; i++)
+        {
+            sum+=i; 
+        }
+        System.out.println(sum);
     }
-    }
+    
 }
